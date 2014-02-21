@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="com.risingj.echoplugin"
+      version="0.1.0">
+    <name>EchoPlug</name>
+
+    <description>Echo demo plugin for Apache Cordova</description>
+    <license>MIT</license>
+    <keywords></keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="www/echoplugin.js" name="echoplugin">
+        <clobbers target="window.echoplugin" />
+    </js-module>
+
+    <!-- windows8 -->
+    <platform name="windows8">
+        <js-module src="src/windows8/echopluginProxy.js" name="EchoProxy">
+            <merges target="" />
+        </js-module>
+    </platform>
+        
+</plugin>
