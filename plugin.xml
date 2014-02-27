@@ -17,9 +17,10 @@
 
     <!-- windows8 -->
     <platform name="windows8">
-        <js-module src="src/windows8/echopluginProxy.js" name="EchoProxy">
+        <js-module src="src/windows8/echopluginProxy2.js" name="EchoProxy">
             <merges target="" />
         </js-module>
+        <framework src="src/windows8/EchoRuntimeComponent.winmd" custom="true"/>
     </platform>
         
 </plugin>
