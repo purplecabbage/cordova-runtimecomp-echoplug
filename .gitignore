@@ -11,3 +11,5 @@ Thumbs.db
 /bin/
 ipch
 Generated Files
+
+tests/TestOutput
