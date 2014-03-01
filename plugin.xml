@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
+
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
            id="com.risingj.echoplugin"
       version="0.1.0">
     <name>EchoPlug</name>
+
 
     <description>Echo demo plugin for Apache Cordova</description>
     <license>MIT</license>
@@ -20,7 +23,8 @@
         <js-module src="src/windows8/echopluginProxy2.js" name="EchoProxy">
             <merges target="" />
         </js-module>
-        <framework src="src/windows8/EchoRuntimeComponent.winmd" custom="true"/>
+        <!--<framework src="src/windows8/EchoRuntimeComponent.winmd" custom="true"/> -->
+       <framework src="WinRTCproj/EchoRuntimeComponent.vcxproj" custom="true" type="projectReference"/>
     </platform>
         
 </plugin>
